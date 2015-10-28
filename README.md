@@ -1,7 +1,7 @@
 # AndroidIF
 How to turn your Inform 7 game into an Android app
 
-1) Install Android Studio, if you do not have it already.
+1) Install Android Studio if you do not have it already.
 
 2) If you are not familiar with Android development, you should start by working through a simple beginners tutorial. Once you can get a basic "Hello World" app to run on your device, you are ready to proceed.
 
