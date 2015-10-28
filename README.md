@@ -23,12 +23,12 @@ How to turn your Inform 7 game into an Android app
 	
 5) Open the project in Android Studio. In "build.gradle (Module:app)", change the applicationId "sichris.androidDemo" to your desired package name. Do the same with the package name in app/manifests/AndroidManifest.xml. Finally, rename the app/java/sichris.androidDemo folder to match. Clean the project, synchronize and rebuild.
 
-6)Change the display name of the game in app/res/values/strings.xml.
+6) Change the display name of the game in app/res/values/strings.xml.
 
-7)Replace the icon.png files in the app/res/drawable folder.
+7) Replace the icon.png files in the app/res/drawable folder.
 
-8)Either replace or remove "song.mp3", in the app/res/raw folder.
+8) Either replace or remove "song.mp3", in the app/res/raw folder.
 
-9)In Init.java, customize the menu title and entries to fit your needs.
+9) In Init.java, customize the menu title and entries to fit your needs.
 
 10) Build and deploy your game.
