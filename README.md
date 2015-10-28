@@ -9,7 +9,7 @@ How to turn your Inform 7 game into an Android app
 
 4) First, you will need to use the Android IF extension to compile a story file that can interface with the Android framework.
 
-	a) From Inform 7, Install the "Android IF" and "Android Typography" extensions from the "Inform Extensions" folder in this project.
+	a) From Inform 7, install the "Android IF" and "Android Typography" extensions from the "Inform Extensions" folder in this project.
 	
 	b) Make a new copy of your game and include the Android IF extension. Note that this will disable save/restore functionality in the Inform window. Don't worry, it will work on the Android device.
 	
