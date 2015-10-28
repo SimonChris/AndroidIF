@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:backgroundSplit">#ffffff</item>
+    </style>
+</resources>
