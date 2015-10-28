@@ -15,11 +15,11 @@ How to turn your Inform 7 game into an Android app
 	
 	c) If you want a background texture, add the statement "The background image is #n" to your game code, where "#n" can be any integer. Place your background texture in the app/assets folder and rename it "#n.pic". The actual format of the texture is not important, but it must be renamed to use the ".pic" extension.
 	
-	c) If your game includes pictures, the Inform display statements must be replaced with "Show Android image #n", where "#n" is the number of the picture. The name of the picture cannot be anything else than a number. Copy your pictures into the app/assets fold and rename them "#n.pic", with the values of "#n" corresponding to the values used in the source. The actual format of the pictures is not important, but they must be renamed to use the ".pic" extension.
+	d) If your game includes pictures, the Inform display statements must be replaced with "Show Android image #n", where "#n" is the number of the picture. The name of the picture cannot be anything else than a number. Copy your pictures into the app/assets fold and rename them "#n.pic", with the values of "#n" corresponding to the values used in the source. The actual format of the pictures is not important, but they must be renamed to use the ".pic" extension.
 	
-	d) Compile your game to a raw ".ulx" file by selecting Glulxe format and unchecking the "Bind up into a Blorb file on release" checkbox. Copy the file into the app/assets folder and rename it "story.ulx".
+	e) Compile your game to a raw ".ulx" file by selecting Glulxe format and unchecking the "Bind up into a Blorb file on release" checkbox. Copy the file into the app/assets folder and rename it "story.ulx".
 	
-	e) Check the "story.ini" file in the "Inform Source" folder for an example.
+	f) Check the "story.ini" file in the "Inform Source" folder for an example.
 	
 5) Open the project in Android Studio. In "build.gradle (Module:app)", change the applicationId "sichris.androidDemo" to your desired package name. Do the same with the package name in app/manifests/AndroidManifest.xml. Finally, rename the app/java/sichris.androidDemo folder to match. Clean the project, synchronize and rebuild.
 
