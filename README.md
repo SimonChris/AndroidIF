@@ -9,17 +9,17 @@ How to turn your Inform 7 game into an Android app
 
 4) First, you will need to use the Android IF extension to compile a story file that can interface with the Android framework.
 
-	a) From Inform 7, install the "Android IF" and "Android Typography" extensions from the "Inform Extensions" folder in this project.
+a) From Inform 7, install the "Android IF" and "Android Typography" extensions from the "Inform Extensions" folder in this project.
 	
-	b) Make a new copy of your game and include the Android IF extension. Note that this will disable save/restore functionality in the Inform window. Don't worry, it will work on the Android device.
+b) Make a new copy of your game and include the Android IF extension. Note that this will disable save/restore functionality in the Inform window. Don't worry, it will work on the Android device.
 	
-	c) If you want a background texture, add the statement "The background image is #n" to your game code, where "#n" can be any integer. Place your background texture in the app/assets folder and rename it "#n.pic". The actual format of the texture is not important, but it must be renamed to use the ".pic" extension.
+c) If you want a background texture, add the statement "The background image is #n" to your game code, where "#n" can be any integer. Place your background texture in the app/assets folder and rename it "#n.pic". The actual format of the texture is not important, but it must be renamed to use the ".pic" extension.
 	
-	d) If your game includes pictures, the Inform display statements must be replaced with "Show Android image #n", where "#n" is the number of the picture. The name of the picture cannot be anything else than a number. Copy your pictures into the app/assets fold and rename them "#n.pic", with the values of "#n" corresponding to the values used in the source. The actual format of the pictures is not important, but they must be renamed to use the ".pic" extension.
+d) If your game includes pictures, the Inform display statements must be replaced with "Show Android image #n", where "#n" is the number of the picture. The name of the picture cannot be anything else than a number. Copy your pictures into the app/assets fold and rename them "#n.pic", with the values of "#n" corresponding to the values used in the source. The actual format of the pictures is not important, but they must be renamed to use the ".pic" extension.
 	
-	e) Compile your game to a raw ".ulx" file by selecting Glulxe format and unchecking the "Bind up into a Blorb file on release" checkbox. Copy the file into the app/assets folder and rename it "story.ulx".
+e) Compile your game to a raw ".ulx" file by selecting Glulxe format and unchecking the "Bind up into a Blorb file on release" checkbox. Copy the file into the app/assets folder and rename it "story.ulx".
 	
-	f) Check the "story.ini" file in the "Inform Source" folder for an example.
+f) Check the "story.ini" file in the "Inform Source" folder for an example.
 	
 5) Open the project in Android Studio. In "build.gradle (Module:app)", change the applicationId "sichris.androidDemo" to your desired package name. Do the same with the package name in app/manifests/AndroidManifest.xml. Finally, rename the app/java/sichris.androidDemo folder to match. Clean the project, synchronize and rebuild.
 
@@ -32,3 +32,7 @@ How to turn your Inform 7 game into an Android app
 9) In Init.java, customize the menu title and entries to fit your needs.
 
 10) Build and deploy your game.
+
+Known issues
+- The app cannot draw more than one picture on the same screen. Ensure that there is always at least one screen's worth of text between your pictures.
+- In-line font changes will cause text to go missing on some devices. Stick to one font per paragraph.
