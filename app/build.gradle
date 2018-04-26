@@ -1,25 +1,42 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId 'sichris.androidDemo'
+        applicationId 'thedemitrius.androidif'
         minSdkVersion 15
-        targetSdkVersion 23
-        compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_5
-            targetCompatibility JavaVersion.VERSION_1_5
-        }
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // compileOptions {
+        //     sourceCompatibility JavaVersion.VERSION_1_5
+        //     targetCompatibility JavaVersion.VERSION_1_5
+        // }
+        lintOptions { checkReleaseBuilds false }
+        testApplicationId 'thedemitrius.testcat'
     }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //link your own proguard file here if desired.
+            // proguardFile 'linkgoeshere'
+            applicationIdSuffix 'BC'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
     }
     productFlavors {
     }
 }
 
 dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
