@@ -28,7 +28,7 @@ e) Compile your game to a raw ".ulx" file by selecting Glulxe format and uncheck
 f) Check the "story.ini" file in the "Inform Source" folder for an example.
 	
 5) **I'm leaving Simon's original instructions here, but I highly recommend using Android Studio to refactor-rename the package and application names instead of manually renaming them!) 
-(if not refactor-renaming) - Open the project in Android Studio. In "build.gradle (Module:app)", change the applicationId "thedemitrius.bigcat" to your desired package name (Remember, no capital letters or spaces). Do the same with the package name in app/manifests/AndroidManifest.xml. Finally, rename the app/java/thedemitrius.bigcat folder to match. Clean the project, synchronize and rebuild.
+(if not refactor-renaming) - Open the project in Android Studio. In "build.gradle (Module:app)", change the applicationId "thedemitrius.androidif" to your desired package name (Remember, no capital letters or spaces). Do the same with the package name in app/manifests/AndroidManifest.xml. Finally, rename the app/java/thedemitrius.androidif folder to match. Clean the project, synchronize and rebuild.
 
 6) Change the display name of the game in app/res/values/strings.xml.
 
