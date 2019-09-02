@@ -1,5 +1,7 @@
 "Android IF" by Simon Christiansen
 
+[This is Simon's original AndroidIF story file. Big Cat source available on request! ~ Demitrius]
+
 The story genre is "Mystery". The release number is 1. The story creation year is 2015.
 
 Use full-length room descriptions, American dialect, no scoring, and the serial comma.
